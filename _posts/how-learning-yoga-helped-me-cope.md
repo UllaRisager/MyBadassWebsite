@@ -1,9 +1,9 @@
 ---
 layout: default
-title: How to make homemade ice cream
+title: How Learning Yoga Helped Me Cope
 image_path: /uploads/how-to-make-homemade-ice-cream.png
-image-alt: how to make homemade ice cream
-snippet: Homemade ice cream
+image-alt: How Learning Yoga Helped Me Cope
+snippet: Posts How Learning Yoga Helped Me Cope
 ---
 
 
