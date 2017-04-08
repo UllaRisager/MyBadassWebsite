@@ -53,8 +53,12 @@ a {
 /* --- Header --- */
 
 header {
+  background-color: transparent;
 }
 
+header nav {
+  text-align: right;
+}
 .logo {
   height: 90px;
 }
@@ -66,13 +70,12 @@ header a {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-
 }
 /* --- Top banner section --- */
 
 .top-banner-section h1 {
   font-weight: bold;
-  margin: 25% 0 0 0px;
+  margin: 30vh 0 0 0;
   color: white;
   letter-spacing: 4px;
 }
