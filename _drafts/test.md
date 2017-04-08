@@ -1,10 +1,10 @@
 ---
 layout: category
 title: test
-image:
+image: /uploads/what-i-learned-from-coding.jpg
 image-alt: learning coding
 snippet: Hjdjldkfldknflkdsngfldngljfdn
 ---
 
 
-dgfdgfd
+What I learned from coding
