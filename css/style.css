@@ -130,6 +130,10 @@ header a {
   background-position: center;
 }
 
+.featured-banner-section h2 {
+  padding: 3vh 0;
+}
+
 .featured-banner-section h3 {
   text-align: center;
   font-size: 1rem;
@@ -174,7 +178,8 @@ header a {
 }
 
 /* --- Category banner section --- */
-.category-section {
+.category-section h2 {
+  padding: 8vh 0;
   }
 .category-square {
 min-height: 24vh;
@@ -197,6 +202,7 @@ margin: 10%;
   /* --- Sign up section --- */
 .sign-up-section {
   text-align: center;
+  padding: 8vh 0;
 }
 
 .button {
@@ -212,7 +218,9 @@ margin: 10%;
   min-width: 10vw;
 }
 
-
+.blog-section h2 {
+  padding: 8vh 0;
+}
 /* --- Footer --- */
 footer {
   text-transform: uppercase;
