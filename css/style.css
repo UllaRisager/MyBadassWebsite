@@ -83,8 +83,9 @@ header a {
 .strapline {
   border: 2px solid white;
   padding: 0.4em;
-  width: 40rem;
+  width: 45rem;
   margin: 15px auto;
+  font-size: 20px;
 }
 
 .title {
@@ -121,6 +122,14 @@ header a {
   }
 
 /* --- Featured banner section --- */
+
+.featured-banner-section {
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  background-position: center;
+}
+
 .featured-banner-section h3 {
   text-align: center;
   font-size: 1rem;
@@ -199,6 +208,8 @@ margin: 10%;
 /* --- Blog section --- */
 .blog-section {
   text-align: center;
+  min-height: 24vh;
+  min-width: 10vw;
 }
 
 
