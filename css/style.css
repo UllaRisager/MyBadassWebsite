@@ -180,26 +180,26 @@ header a {
 /* --- Category banner section --- */
 .category-section h2 {
   padding: 8vh 0;
-  }
+}
 .category-square {
-min-height: 24vh;
-min-width: 10vw;
-display: flex;
-justify-content: center;
-align-items: center;
-background-size: cover;
-color: white;
-padding: 10%;
-margin: 10%;
-  }
+  min-height: 24vh;
+  min-width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  color: white;
+  padding: 10%;
+  margin: 10%;
+}
 
-  .category-square h4{
-    color: white;
-    border: 2px solid white;
-    text-align: center;
-  }
+.category-square h4{
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+}
 
-  /* --- Sign up section --- */
+/* --- Sign up section --- */
 .sign-up-section {
   text-align: center;
   padding: 8vh 0;
@@ -207,15 +207,14 @@ margin: 10%;
 
 .button {
   width: 100px;
-  height:1000px;
+  height:100px;
   padding: 10px 0;
 }
 
 /* --- Blog section --- */
 .blog-section {
   text-align: center;
-  min-height: 24vh;
-  min-width: 10vw;
+  background-position: center;
 }
 
 .blog-section h2 {
