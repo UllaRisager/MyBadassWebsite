@@ -165,14 +165,15 @@ header a {
 .category-section {
   }
 .category-square {
-min-height: 32vh;
+min-height: 24vh;
+min-width: 10vw;
 display: flex;
 justify-content: center;
 align-items: center;
 background-size: cover;
 color: white;
-padding: 2%;
-margin: 2%;
+padding: 10%;
+margin: 10%;
   }
 
   .category-square h4{
@@ -184,6 +185,12 @@ margin: 2%;
   /* --- Sign up section --- */
 .sign-up-section {
   text-align: center;
+}
+
+.button {
+  width: 100px;
+  height:1000px;
+  padding: 10px 0;
 }
 
 /* --- Blog section --- */
