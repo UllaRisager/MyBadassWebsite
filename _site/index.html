@@ -4,146 +4,176 @@
     <!--Responsive code  -->
     <meta name="viewport" content="width-device-width, initial-scale=1">
 
+    <!--Font  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+    <!---icon stylesheet--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <!-- Gridlex-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">
 
     <!-- CSS Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>
       Meet A Local and upskill while you travel
     </title>
   </head>
   <body>
     <!-- HEADER-->
-    <header>
-      <div>
-        <img src="logo" alt="logo.png">
-      </div>
-      <nav>
-        <a href="link">How it works</a>
-        <a href="link">Sign up</a>
-        <a href="link">About</a>
-        <a href="link">Contact</a>
-      </nav>
-    </header>
-
     <!--TOP BANNER SECTION  -->
-<section>
-    <h1>
-      <div>Learn from Locals while you travel!</div>
-      <div>Make money, meet people and have fun!</div>
-    </h1>
-</section>
+    <section class="top-banner-section" style="background-img=url('/images/homepage/homepage-bg.jpg')">
 
-<!--ABOUT BANNER SECTION  -->
-<section>
-  <p>Upskill while you travel, meet people and learn something new. Why not learn it from locals? Instead of just hanging out on a beach, why not take a photography class or learn how to code in a fes days?</p>
+      <header class="grid-spaceBetween">
+        <div class="col">
+          <img class="logo" src="/images/general/logo.png" alt="logo.png">
+        </div>
+        <nav class="col right">
+          <a href="link">How it works</a>
+          <a href="link">Sign up</a>
+          <a href="link">About</a>
+          <a href="link">Contact</a>
+        </nav>
+      </header>
+      <h1>
+        <div class="title">Learn with Locals while you travel!</div>
+        <div class="strapline">Learn new skills, meet people and have fun!</div>
+      </h1>
+    </section>
+
+    <!--ABOUT BANNER SECTION  -->
+<section class="about-banner-section">
+  <h5>Imagine going to Bali and instead of just laying by the pool, you might be able to learn a new skill or upskill an existing one?</h5>
+  <p>Learn with Locals allows you to meet likeminded people and learn something new and why not learn it from locals who know it best? Why not learn how to code that website you've always wanted or brush up on those photography skill? You might also get started with yoga like you've always wanted to try out, but never had the time to do?</p>
 </section>
 
 <!--FEATURED BANNER SECTION  -->
-<section>
-  <h2> Featured Skills</h2>
+<section class="featured-banner-section">
+  <h2>Featured Skills & Experiences</h2>
 
 <!--FEATURE SKILL 1 -->
+<div class="grid">
 
-    <a href="/upskills/lightroom-photography-bali-ulla.html">
-      <div>
-        <img src="/images/upskills/lightroom-photography-bali-ulla.jpg" alt=" learn lightroom photography in Bali with Ulla">
-        <h3> learn lightroom photography in Bali with Ulla</h3>
-        <p> Learn how to take beautiful photos and edit them with lightroom</p>
-        <div> 2 days $100 USD</div>
+    <a class="col-4" href="/upskills/drawing-in-Bali-Cindy.html">
+      <div class="padded">
+        <img src="/images/upskills/asthanga-yoga-bali-amaranta.jpg" alt=" Asthanga yoga">
+        <h3> Asthanga yoga</h3>
+        <p class="snippet"> Learn the basics of Ashtanga yoga and how to keep practicing on your own.</p>
+
+        <p class="details">Bali, Indonesia</p>
+        <p class="details"> 1 day with Amaranta $50 USD</p>
       </div>
     </a>
   
-</featured-section>
+    <a class="col-4" href="/upskills/lightroom-photography-bali-ulla.html">
+      <div class="padded">
+        <img src="/images/upskills/photography-bali-emilio.jpg" alt=" Photography and lightroom editing">
+        <h3> Photography and lightroom editing</h3>
+        <p class="snippet"> Learn how to take beautiful photos and edit them with Adobe lightroom</p>
+
+        <p class="details">Bali, Indonesia</p>
+        <p class="details"> 2 days with Emilio $100 USD</p>
+      </div>
+    </a>
+  
+    <a class="col-4" href="/upskills/web-development-bali-tina.html">
+      <div class="padded">
+        <img src="/images/upskills/web-development-bali-tina.jpg" alt=" Web Development">
+        <h3> Web Development</h3>
+        <p class="snippet"> Learn how to build badass websites. Be your own boss and get an understanding of how coding works.</p>
+
+        <p class="details">Bali, Indonesia</p>
+        <p class="details"> 3 days with Tina $200 USD</p>
+      </div>
+    </a>
+  
+</div>
+</section>
 
 <!-- TESTIMONIAL-SECTION -->
-<section>
-  <div>
-    <div>
-      <img src="profil-picture.png" alt="profile-picture.png">
-      <div>Cindy, content strategist</div>
+<section class="grid">
+  <div class="col-4">
+      <img src="/images/general/cindy.jpg" alt="cindy.jpg" class="testimonial-image">
+      <h3 class="testimonial-section-headline">Cindy content strategist</h3>
     </div>
-    <div>
-      I've learned how to build my own websites and I met amazing people
+    <div class="col-1 quote right">"</div>
+    <div class="col-6 testimonial-section">
+      I've learned how to build my own websites and I met amazing people. Brooklyn sartorial hammock, seitan tousled etsy cray affogato yr health goth art party ennui photo booth direct trade bespoke.
+    </div>
+    <div class="col-1-bottom quote left">"</div>
+    <div class="col-2">
     </div>
   </div>
 </section>
 
 <!-- CATEGORY SECTION -->
 <section>
-  <h2>Browse Experiences & Skills</h2>
+<h2>What do you want to learn?</h2>
+<div class="grid">
 <!-- CATEGORY 1 -->
-  <a>
-    <div>
-      <h3>Online Media & Technology</h3>
-    </div>
-  </a>
 
-  <!-- CATEGORY 2 -->
-  <a>
-    <div>
-      <h3>Arts & Lifestyle</h3>
-    </div>
-  </a>
-
-  <!-- CATEGORY 3 -->
-  <a>
-    <div>
-      <h3>Food & Drink</h3>
-    </div>
-  </a>
-
-  <!-- CATEGORY 4 -->
-  <a>
-    <div>
-      <h3>Adventure & Outdoors</h3>
-    </div>
-  </a>
+    <a class="col-3" href="/categories/adventures-and-outdoors">
+      <div class="padded category-square" style="background-image:url('/images/categories/categories-online-media-tech.jpg')">
+        <h3> Online media & Technology</h3>
+      </div>
+    </a>
+  
+    <a class="col-3" href="/categories/arts-and-lifestyle.html">
+      <div class="padded category-square" style="background-image:url('/images/categories/categories-online-media-tech.jpg')">
+        <h3> Arts & Lifestyle</h3>
+      </div>
+    </a>
+  
+    <a class="col-3" href="/categories/food-and-drink.html">
+      <div class="padded category-square" style="background-image:url('/images/categories/categories-online-media-tech.jpg')">
+        <h3> Online media & Technology</h3>
+      </div>
+    </a>
+  
+    <a class="col-3" href="/categories/online-media-tech">
+      <div class="padded category-square" style="background-image:url('/images/categories/categories-online-media-tech.jpg')">
+        <h3> Online media & Technology</h3>
+      </div>
+    </a>
+  
+</div>
 </section>
 
 <!-- SIGN UP SECTION -->
-<section>
+<section class="sign-up-section">
   <div>
     <h2>
       Want to offer your skills, meet people and make money?
     </h2>
-    <a>Sign up</a>
+    <input type="button" value="Sign up"/>
   </div>
 </section>
 
 <!-- BLOG SECTION -->
-<section>
+<section class="blog-section">
   <h2>
     Stories from the blog
   </h2>
   <!-- BLOG IMG 1 -->
-  <div>
-    <img src="blog1" alt="blog.png">
-    <p>snippet text</p>
-  </div>
-  <!-- BLOG IMG 2 -->
-  <div>
-    <img src="blog1" alt="blog.png">
-    <p>snippet text</p>
-  </div>
-<!-- BLOG IMG 3 -->
-  <div>
-    <img src="blog1" alt="blog.png">
-    <p>snippet text</p>
+  <div class="grid">
+    
+    <a href="/2017/04/07/what-i-learned-from-coding.html" class="col-4">
+    <img src="photography-bali-emilio.jpg" alt="learning coding">
+    <h4>What I learned from coding</h4>
+    <p>Hjdjldkfldknflkdsngfldngljfdn</p>
+  </a>
+    
   </div>
 </section>
 
     <!-- FOOTER -->
-    <footer>
-    <div>
-        <a href=“mailto:urisager@gmail.com”>urisager@gmail.com</a>
-    </div>
-      <nav>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Linkedin</a>
-      </nav>
+    <footer class="footer-styles">
+      <div>
+        <i class="fa fa-facebook-square label-icon" aria-hidden="true"></i>
+        <i class="fa fa-instagram label-icon" aria-hidden="true"></i>
+        <i class="fa fa-envelope label-icon" aria-hidden="true"></i>
+        <i class="fa fa-linkedin label-icon" aria-hidden="true"></i>
+      </div>
     </footer>
   </body>
 </html>

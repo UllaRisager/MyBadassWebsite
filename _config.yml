@@ -1,3 +1,5 @@
 collections:
   upskills:
     output: true
+  categories:
+    output: true

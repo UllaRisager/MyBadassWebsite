@@ -1,110 +1,90 @@
 ---
 layout: default
 title: Meet A Local and upskill while you travel
+banner: /images/homepage/homepage-bg.jpg
 ---
-<!--TOP BANNER SECTION  -->
-<section>
-    <h1>
-      <div>Learn from Locals while you travel!</div>
-      <div>Make money, meet people and have fun!</div>
-    </h1>
-</section>
 
 <!--ABOUT BANNER SECTION  -->
-<section>
-  <p>Upskill while you travel, meet people and learn something new. Why not learn it from locals? Instead of just hanging out on a beach, why not take a photography class or learn how to code in a fes days?</p>
+<section class="about-banner-section">
+  <h5>Imagine going to Bali and instead of just laying by the pool, you might be able to learn a new skill or upskill an existing one?</h5>
+  <p>Learn with Locals allows you to meet likeminded people and learn something new and why not learn it from locals who know it best? Why not learn how to code that website you've always wanted or brush up on those photography skill? You might also get started with yoga like you've always wanted to try out, but never had the time to do?</p>
 </section>
 
 <!--FEATURED BANNER SECTION  -->
-<section>
-  <h2> Featured Skills</h2>
+<section class="featured-banner-section">
+  <h2>Featured Skills & Experiences</h2>
 
 <!--FEATURE SKILL 1 -->
+<div class="grid">
 {% for upskill in site.upskills %}
-    <a href="{{upskill.url}}">
-      <div>
+    <a class="col-4" href="{{upskill.url}}">
+      <div class="padded">
         <img src="/images/upskills/{{ upskill.feature-image }}" alt=" {{ upskill.title }}">
         <h3> {{ upskill.title }}</h3>
-        <p> {{ upskill.snippet }}</p>
-        <div> {{ upskill.duration }} {{ upskill.price }}</div>
+        <p class="snippet"> {{ upskill.snippet }}</p>
+
+        <p class="details">{{upskill.location}}</p>
+        <p class="details"> {{ upskill.duration }} {{ upskill.host-name }} {{ upskill.price }}</p>
       </div>
     </a>
   {% endfor %}
-</featured-section>
+</div>
+</section>
 
 <!-- TESTIMONIAL-SECTION -->
-<section>
-  <div>
-    <div>
-      <img src="profil-picture.png" alt="profile-picture.png">
-      <div>Cindy, content strategist</div>
+<section class="grid">
+  <div class="col-4">
+      <img src="/images/general/cindy.jpg" alt="cindy.jpg" class="testimonial-image">
+      <h3 class="testimonial-section-headline">Cindy content strategist</h3>
     </div>
-    <div>
-      I've learned how to build my own websites and I met amazing people
+    <div class="col-1 quote right">"</div>
+    <div class="col-6 testimonial-section">
+      I've learned how to build my own websites and I met amazing people. Brooklyn sartorial hammock, seitan tousled etsy cray affogato yr health goth art party ennui photo booth direct trade bespoke.
+    </div>
+    <div class="col-1-bottom quote left">"</div>
+    <div class="col-2">
     </div>
   </div>
 </section>
 
 <!-- CATEGORY SECTION -->
 <section>
-  <h2>Browse Experiences & Skills</h2>
+<h2>What do you want to learn?</h2>
+<div class="grid">
 <!-- CATEGORY 1 -->
-  <a>
-    <div>
-      <h3>Online Media & Technology</h3>
-    </div>
-  </a>
-
-  <!-- CATEGORY 2 -->
-  <a>
-    <div>
-      <h3>Arts & Lifestyle</h3>
-    </div>
-  </a>
-
-  <!-- CATEGORY 3 -->
-  <a>
-    <div>
-      <h3>Food & Drink</h3>
-    </div>
-  </a>
-
-  <!-- CATEGORY 4 -->
-  <a>
-    <div>
-      <h3>Adventure & Outdoors</h3>
-    </div>
-  </a>
+{% for cat in site.categories %}
+    <a class="col-3" href="{{cat.url}}">
+      <div class="padded category-square" style="background-image:url('/images/categories/{{ cat.feature-image }}')">
+        <h3> {{ cat.title }}</h3>
+      </div>
+    </a>
+  {% endfor %}
+</div>
 </section>
 
 <!-- SIGN UP SECTION -->
-<section>
+<section class="sign-up-section">
   <div>
     <h2>
       Want to offer your skills, meet people and make money?
     </h2>
-    <a>Sign up</a>
+    <input type="button" value="Sign up"/>
   </div>
 </section>
 
 <!-- BLOG SECTION -->
-<section>
+<section class="blog-section">
   <h2>
     Stories from the blog
   </h2>
   <!-- BLOG IMG 1 -->
-  <div>
-    <img src="blog1" alt="blog.png">
-    <p>snippet text</p>
-  </div>
-  <!-- BLOG IMG 2 -->
-  <div>
-    <img src="blog1" alt="blog.png">
-    <p>snippet text</p>
-  </div>
-<!-- BLOG IMG 3 -->
-  <div>
-    <img src="blog1" alt="blog.png">
-    <p>snippet text</p>
+  <div class="grid">
+    {% for post in site.posts %}
+    <a href="{{post.url}}" class="col-4">
+    <img src="{{post.image}}" alt="{{post.image-alt}}">
+    <h4>{{post.title}}</h4>
+    <p>{{post.snippet}}</p>
+  </a>
+    {% endfor %}
   </div>
 </section>
