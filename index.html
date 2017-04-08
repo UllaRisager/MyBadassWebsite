@@ -19,7 +19,7 @@ banner: /images/homepage/homepage-bg.jpg
 {% for upskill in site.upskills %}
     <a class="col-4" href="{{upskill.url}}">
       <div class="padded">
-        <img src="/images/upskills/{{ upskill.feature-image }}" alt=" {{ upskill.title }}">
+        <img src="{{ upskill.feature-image_path }}" alt=" {{ upskill.title }}">
         <h3> {{ upskill.title }}</h3>
         <p class="snippet"> {{ upskill.snippet }}</p>
 
